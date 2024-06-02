@@ -26,9 +26,9 @@
     },
     "products": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::product.product",
-      "mappedBy": "cart"
+      "mappedBy": "carts"
     },
     "users_permissions_user": {
       "type": "relation",

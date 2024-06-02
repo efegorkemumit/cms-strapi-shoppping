@@ -811,7 +811,7 @@ export interface ApiCartCart extends Schema.CollectionType {
     color: Attribute.String;
     products: Attribute.Relation<
       'api::cart.cart',
-      'oneToMany',
+      'manyToMany',
       'api::product.product'
     >;
     users_permissions_user: Attribute.Relation<
@@ -902,6 +902,42 @@ export interface ApiColorColor extends Schema.CollectionType {
   };
 }
 
+export interface ApiOrderOrder extends Schema.CollectionType {
+  collectionName: 'orders';
+  info: {
+    singularName: 'order';
+    pluralName: 'orders';
+    displayName: 'order';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String;
+    phone: Attribute.String;
+    address: Attribute.String;
+    subtotal: Attribute.Decimal;
+    paymentText: Attribute.String;
+    userId: Attribute.Integer;
+    OrderItemList: Attribute.Component<'order-item-list.order-item-list', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::order.order',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::order.order',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiProductProduct extends Schema.CollectionType {
   collectionName: 'products';
   info: {
@@ -936,9 +972,9 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'manyToMany',
       'api::color.color'
     >;
-    cart: Attribute.Relation<
+    carts: Attribute.Relation<
       'api::product.product',
-      'manyToOne',
+      'manyToMany',
       'api::cart.cart'
     >;
     createdAt: Attribute.DateTime;
@@ -1038,6 +1074,7 @@ declare module '@strapi/types' {
       'api::cart.cart': ApiCartCart;
       'api::category.category': ApiCategoryCategory;
       'api::color.color': ApiColorColor;
+      'api::order.order': ApiOrderOrder;
       'api::product.product': ApiProductProduct;
       'api::size.size': ApiSizeSize;
       'api::slider.slider': ApiSliderSlider;

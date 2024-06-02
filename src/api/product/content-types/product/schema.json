@@ -61,9 +61,9 @@
       "target": "api::color.color",
       "inversedBy": "products"
     },
-    "cart": {
+    "carts": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::cart.cart",
       "inversedBy": "products"
     }
