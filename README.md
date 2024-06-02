@@ -1,57 +1,96 @@
-# 🚀 Getting started with Strapi
+<a href="" rel="nofollow">
+<img src="https://github.com/efegorkemumit/nextjs14-shopping-store-strapi/blob/master/public/eticaret-strapi.jpg"
+ style="max-width: 100%;">
+</a>
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+<div></div>
 
-### `develop`
+<a href="https://www.instagram.com/efegorkemumit/" rel="nofollow">
+<img src="https://efegorkemumit.github.io/assets/img/iconss/instagram.png" style="max-width: 10%;">
+</a>
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+<a href="https://efegorkemumit.com/" rel="nofollow">
+<img src="https://efegorkemumit.github.io/assets/img/iconss/website.png" style="max-width: 10%;">
+</a>
+
+<a href="https://github.com/efegorkemumit" rel="nofollow">
+<img src="https://efegorkemumit.github.io/assets/img/iconss/github.png" style="max-width: 10%;">
+</a>
+
+<a href="https://www.linkedin.com/in/efe-g%C3%B6rkem-%C3%BCmit-a084009b/" rel="nofollow">
+<img src="https://efegorkemumit.github.io/assets/img/iconss/linkedin.png" style="max-width: 10%;">
+</a>
+
+<a href="https://www.youtube.com/@EfeGorkemUmit?sub_confirmation=1" rel="nofollow">
+<img src="https://efegorkemumit.github.io/assets/img/iconss/youtube.png" style="max-width: 10%;">
+</a>
+
+
+<div style="height:25px">
+
+## LINKS
+
+
+- Store Github: https://github.com/efegorkemumit/nextjs14-shopping-store-strapi
+- Cms Github: https://github.com/efegorkemumit/cms-strapi-shoppping
+- NodeJs : https://github.com/efegorkemumit/nodejs-nextjs14-sanalpos-github
+- File : https://github.com/efegorkemumit/nextjs14-shopping-store-strapi/blob/master/public/ecommerce.rar
+
+
+
+##  E-Ticaret Sitesi | Full Stack | Iyzico Sanalpos Entegrasyon | Strapi, NextJS, NodeJs, TailwindCSS, Shdnc
+
+## Video
+
+**Timestamps**
+- 00:00 Tanıtım
+- 08:08 Kurulumlar
+- 21:23 DarkMode
+- 25:03 Dizin Yapısı
+- 37:41 React Hook Form Login ve Register UI
+- 50:17 Strapi Kurulum
+- 58:59 Login and Register
+- 01:20:52 Navbar
+- 01:38:24 Category Collection
+- 01:43:51 Navbar Category List
+- 01:57:29 Mobile Menu
+- 02:00:59 Slider
+- 02:15:11 Category List Homepage
+- 02:22:58 Product Collection
+- 02:33:47 Filtering Ön Bakış
+- 02:38:52 ProductList
+- 03:01:55 Product Modal
+- 03:23:25 Product Skeleton
+- 03:28:05 Product Detail
+- 03:41:05 Recent product
+- 03:48:14 Filter Product
+- 04:30:49 Linkleri düzenleme
+- 04:35:54 Add To cart
+- 05:02:17 Get To cart
+- 05:30:19 Cart Item Design
+- 05:37:30 Delete  Cart
+- 05:40:43 Checkout Page
+- 06:01:01 Iyzico Nodejs
+- 06:11:05 Iyzico Ödeme Alma işlemi
+- 06:30:12 Order Kayıt
+- 06:46:50 Bug fix
+- 06:51:31 My Order
+
+
+
+
+
+```bash
+
+HOST=0.0.0.0
+PORT=1337
+APP_KEYS=
+API_TOKEN_SALT=
+ADMIN_JWT_SECRET=
+TRANSFER_TOKEN_SALT=
+# Database
+DATABASE_CLIENT=sqlite
+DATABASE_FILENAME=.tmp/data.db
+JWT_SECRET=
 
 ```
-npm run develop
-# or
-yarn develop
-```
-
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
